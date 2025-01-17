@@ -75,17 +75,49 @@ def test_main_page_element_about_company(settings_browser):
     with allure.step('Проверить появление формы "Оставьте заявку на консультацию"'):
         main_page.check_consultation_form()
 
+
 @allure.title('Корректная работа блока "Блог" на главной странице сайта')
 def test_main_page_element_blog(settings_browser):
-        with allure.step('Открыть главную страницу сайта'):
-            main_page = MainPage()
-            main_page.open()
+    with allure.step('Открыть главную страницу сайта'):
+        main_page = MainPage()
+        main_page.open()
 
-        with allure.step('Найти и нажать на элемент "Блог"'):
-            main_page.click_blog()
+    with allure.step('Найти и нажать на элемент "Блог"'):
+        main_page.click_blog()
 
-        with allure.step('Проверить переход к разделу "Блог"'):
-            main_page.check_blog()
+    with allure.step('Проверить переход к разделу "Блог"'):
+        main_page.check_blog()
+
+    with allure.step('Найти и нажать на кнопку "Связаться с нами" в разделе "Блог"'):
+        main_page.click_submit_application()
+
+    with allure.step('Проверить появление формы "Оставьте заявку на консультацию"'):
+        main_page.check_consultation_form()
+
+
+@allure.title('Корректная работа блока "Контакты" на главной странице сайта')
+def test_main_page_element_contacts(settings_browser):
+    with allure.step('Открыть главную страницу сайта'):
+        main_page = MainPage()
+        main_page.open()
+
+    with allure.step('Найти и нажать на элемент "Контакты"'):
+        main_page.click_contacts()
+
+    with allure.step('Проверить переход к разделу "Блог"'):
+        main_page.check_contacts()
+
+    with allure.step('Найти и нажать на кнопку "Связаться с нами" в разделе "Контакты"'):
+        main_page.click_submit_application()
+
+    with allure.step('Проверить появление формы "Оставьте заявку на консультацию"'):
+        main_page.check_consultation_form()
+
+
+
+
+
+
 
 
 

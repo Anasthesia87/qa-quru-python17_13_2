@@ -17,6 +17,7 @@ class MainPage:
         self.blog = browser.element(by.text('Блог'))
         self.blog_description = browser.element(by.text('О продуктах, компании и отраслевых рынках'))
         self.contacts = browser.element(by.text('Контакты'))
+        self.contacts_description = browser.element(by.text('Адреса офисов и способы связи'))
         self.sign_in = browser.element(by.text('Вход'))
 
     def open(self):
@@ -58,6 +59,14 @@ class MainPage:
 
     def check_blog(self):
         self.blog_description.should(be.visible)
+
+    def click_contacts(self):
+        self.contacts.click()
+
+    def check_contacts(self):
+        self.contacts_description.should(be.visible)
+
+
 
 
 
