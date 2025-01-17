@@ -1,20 +1,82 @@
-from selene import browser, by
+from selene import browser, by, be
 
-class MainPageObjects:
+
+class MainPage:
     def __init__(self):
         self.submit_application = browser.element('.head-section__main > div > button')
+        self.consultation_form = browser.element('#call-form')
+        self.consultation_form_close_button = browser.element('#call-form > button')
         self.connection = browser.element(by.text('Подключение'))
+        self.connection_description = browser.element(by.text('Удобный формат работы: web-интерфейс, API, мобильное приложение'))
         self.career = browser.element(by.text('Карьера'))
+        self.career_description = browser.element(by.text('Стань частью команды SpectrumData'))
+        self.view_vacancies = browser.element(by.text('Смотреть вакансии'))
+        self.vacancies = browser.element('#vacancies')
         self.about_company = browser.element(by.text('О нас'))
+        self.about_company_description = browser.element(by.text('Компания, проекты и наши клиенты'))
         self.blog = browser.element(by.text('Блог'))
         self.contacts = browser.element(by.text('Контакты'))
         self.sign_in = browser.element(by.text('Вход'))
 
-class ConsultationForm:
-
-
-
     def open(self):
         browser.open('/')
 
+    def click_submit_application(self):
+        self.submit_application.click()
 
+    def check_consultation_form(self):
+        self.consultation_form.should(be.visible)
+        self.consultation_form_close_button.click()
+
+    def click_connection(self):
+        self.connection.click()
+
+    def check_connection(self):
+        self.connection_description.should(be.visible)
+
+    def click_career(self):
+        self.career.click()
+
+    def check_career(self):
+        self.career_description.should(be.visible)
+
+    def click_view_vacancies(self):
+        self.view_vacancies.click()
+
+    def check_vacancies(self):
+        self.vacancies.should(be.visible)
+
+    def click_about_company(self):
+        self.about_company.click()
+
+    def check_about_company(self):
+        self.about_company_description.should(be.visible)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class ConsultationForm:
+    def __init__(self):
+        self.company = browser.element('#form_text_7_2')
+        self.name = browser.element('#form_text_8_2')
+        self.email = browser.element('#form_email_9_2')
+        self.phone = browser.element('#form_email_9_2')
+        self.comment = browser.element('#form_textarea_11_2')
+        self.submit = browser.element('#call-form > div > form > label > button')
+
+    def open(self):
+        browser.open('/')
