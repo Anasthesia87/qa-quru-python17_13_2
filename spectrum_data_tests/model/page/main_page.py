@@ -15,6 +15,7 @@ class MainPage:
         self.about_company = browser.element(by.text('О нас'))
         self.about_company_description = browser.element(by.text('Компания, проекты и наши клиенты'))
         self.blog = browser.element(by.text('Блог'))
+        self.blog_description = browser.element(by.text('О продуктах, компании и отраслевых рынках'))
         self.contacts = browser.element(by.text('Контакты'))
         self.sign_in = browser.element(by.text('Вход'))
 
@@ -51,6 +52,12 @@ class MainPage:
 
     def check_about_company(self):
         self.about_company_description.should(be.visible)
+
+    def click_blog(self):
+        self.blog.click()
+
+    def check_blog(self):
+        self.blog_description.should(be.visible)
 
 
 
