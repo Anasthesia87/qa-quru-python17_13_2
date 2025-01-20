@@ -113,6 +113,17 @@ def test_main_page_element_contacts(settings_browser):
     with allure.step('Проверить появление формы "Оставьте заявку на консультацию"'):
         main_page.check_consultation_form()
 
+@allure.title('Корректная работа кнопки "Вход" на главной странице сайта')
+def test_main_page_element_contacts(settings_browser):
+    with allure.step('Открыть главную страницу сайта'):
+        main_page = MainPage()
+        main_page.open()
+
+    with allure.step('Найти и нажать на кнопку "Вход"'):
+        main_page.click_sign_in()
+
+    with allure.step('Проверить появление формы "Войти в личный кабинет"'):
+        main_page.check_sign_in()
 
 
 

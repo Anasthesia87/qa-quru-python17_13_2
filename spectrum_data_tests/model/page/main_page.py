@@ -19,6 +19,7 @@ class MainPage:
         self.contacts = browser.element(by.text('Контакты'))
         self.contacts_description = browser.element(by.text('Адреса офисов и способы связи'))
         self.sign_in = browser.element(by.text('Вход'))
+        self.sign_in_description = browser.element(by.text('Войти в личный кабинет'))
 
     def open(self):
         browser.open('/')
@@ -65,6 +66,12 @@ class MainPage:
 
     def check_contacts(self):
         self.contacts_description.should(be.visible)
+
+    def click_sign_in(self):
+        self.sign_in.click()
+
+    def check_sign_in(self):
+        self.sign_in_description.should(be.visible)
 
 
 
