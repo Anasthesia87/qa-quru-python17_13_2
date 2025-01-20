@@ -4,7 +4,7 @@ import allure
 
 
 @allure.title('Корректная работа кнопки "Вход" на главной странице сайта')
-def test_main_page_element_sign_in(settings_browser):
+def test_main_page_element_sign_in(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
@@ -17,7 +17,7 @@ def test_main_page_element_sign_in(settings_browser):
 
 
 @allure.title('Корректная работа кнопки "Оставить заявку" на главной странице сайта')
-def test_main_page_element_submit_application(settings_browser):
+def test_main_page_element_submit_application(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
@@ -30,7 +30,7 @@ def test_main_page_element_submit_application(settings_browser):
 
 
 @allure.title('Корректный переход к блоку "Подключение" на главной странице сайта')
-def test_main_page_element_connection(settings_browser):
+def test_main_page_element_connection(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
@@ -43,7 +43,7 @@ def test_main_page_element_connection(settings_browser):
 
 
 @allure.title('Корректный переход к блоку "Карьера" на главной странице сайта')
-def test_main_page_element_career(settings_browser):
+def test_main_page_element_career(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
@@ -62,7 +62,7 @@ def test_main_page_element_career(settings_browser):
 
 
 @allure.title('Корректный переход к блоку "О нас" на главной странице сайта')
-def test_main_page_element_about_company(settings_browser):
+def test_main_page_element_about_company(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
@@ -75,7 +75,7 @@ def test_main_page_element_about_company(settings_browser):
 
 
 @allure.title('Корректный переход к блоку "Блог" на главной странице сайта')
-def test_main_page_element_blog(settings_browser):
+def test_main_page_element_blog(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
@@ -88,7 +88,7 @@ def test_main_page_element_blog(settings_browser):
 
 
 @allure.title('Корректный переход к блоку "Контакты" на главной странице сайта')
-def test_main_page_element_contacts(settings_browser):
+def test_main_page_element_contacts(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
@@ -101,7 +101,7 @@ def test_main_page_element_contacts(settings_browser):
 
 
 @allure.title('Корректное отображение формы "Оставьте заявку на консультацию" при переходе через блок "Подключение"')
-def test_correct_display_consultation_form_via_connection(settings_browser):
+def test_correct_display_consultation_form_via_connection(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
@@ -117,7 +117,7 @@ def test_correct_display_consultation_form_via_connection(settings_browser):
 
 
 @allure.title('Корректное отображение формы "Оставьте заявку на консультацию" при переходе через блок "О нас"')
-def test_main_page_element_submit_application(settings_browser):
+def test_main_page_element_submit_application(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
@@ -133,7 +133,7 @@ def test_main_page_element_submit_application(settings_browser):
 
 
 @allure.title('Корректное отображение формы "Оставьте заявку на консультацию" при переходе через блок "Блог"')
-def test_main_page_element_blog(settings_browser):
+def test_main_page_element_blog(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
@@ -149,7 +149,7 @@ def test_main_page_element_blog(settings_browser):
 
 
 @allure.title('Корректное отображение формы "Оставьте заявку на консультацию" при переходе через блок "Контакты"')
-def test_main_page_element_blog(settings_browser):
+def test_main_page_element_blog(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
@@ -165,7 +165,7 @@ def test_main_page_element_blog(settings_browser):
 
 
 @allure.title('Успешное заполнение и отправка формы "Оставьте заявку на консультацию"')
-def test_consultation_form(settings_browser):
+def test_consultation_form(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
