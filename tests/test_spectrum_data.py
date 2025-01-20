@@ -1,4 +1,3 @@
-from time import sleep
 from spectrum_data_tests.model.page.main_page import MainPage
 from spectrum_data_tests.model.form.consultation_form import ConsultationForm
 import allure
