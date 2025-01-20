@@ -1,0 +1,2 @@
+class ConsultationForm:
+    pass

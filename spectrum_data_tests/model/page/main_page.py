@@ -3,7 +3,8 @@ from selene import browser, by, be
 
 class MainPage:
     def __init__(self):
-        self.submit_application = browser.element('.head-section__main > div > button')
+        self.submit_application_main_page = browser.element('.head-section__main > div > button')
+        self.submit_application_via_other_section = browser.element('.head-section__button-block > div > a')
         self.consultation_form = browser.element('#call-form')
         self.consultation_form_close_button = browser.element('#call-form > button')
         self.connection = browser.element(by.text('Подключение'))
@@ -15,7 +16,7 @@ class MainPage:
         self.about_company = browser.element(by.text('О нас'))
         self.about_company_description = browser.element(by.text('Компания, проекты и наши клиенты'))
         self.blog = browser.element(by.text('Блог'))
-        self.blog_description = browser.element(by.text('О продуктах, компании и отраслевых рынках'))
+        self.blog_description = browser.element(by.text('О продуктах, компании ﻿и отраслевых рынках'))
         self.contacts = browser.element(by.text('Контакты'))
         self.contacts_description = browser.element(by.text('Адреса офисов и способы связи'))
         self.sign_in = browser.element(by.text('Вход'))
@@ -25,7 +26,10 @@ class MainPage:
         browser.open('/')
 
     def click_submit_application(self):
-        self.submit_application.click()
+        self.submit_application_main_page.click()
+
+    def click_submit_application_via_other_section(self):
+        self.submit_application_via_other_section.click()
 
     def check_consultation_form(self):
         self.consultation_form.should(be.visible)
@@ -73,33 +77,3 @@ class MainPage:
     def check_sign_in(self):
         self.sign_in_description.should(be.visible)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class ConsultationForm:
-    def __init__(self):
-        self.company = browser.element('#form_text_7_2')
-        self.name = browser.element('#form_text_8_2')
-        self.email = browser.element('#form_email_9_2')
-        self.phone = browser.element('#form_email_9_2')
-        self.comment = browser.element('#form_textarea_11_2')
-        self.submit = browser.element('#call-form > div > form > label > button')
-
-    def open(self):
-        browser.open('/')
