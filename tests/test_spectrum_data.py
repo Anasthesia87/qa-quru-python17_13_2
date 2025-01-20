@@ -117,7 +117,7 @@ def test_correct_display_consultation_form_via_connection(setup_browser):
 
 
 @allure.title('Корректное отображение формы "Оставьте заявку на консультацию" при переходе через блок "О нас"')
-def test_main_page_element_submit_application(setup_browser):
+def test_correct_display_consultation_form_via_about_company(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
@@ -133,7 +133,7 @@ def test_main_page_element_submit_application(setup_browser):
 
 
 @allure.title('Корректное отображение формы "Оставьте заявку на консультацию" при переходе через блок "Блог"')
-def test_main_page_element_blog(setup_browser):
+def test_correct_display_consultation_form_via_blog(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
@@ -149,7 +149,7 @@ def test_main_page_element_blog(setup_browser):
 
 
 @allure.title('Корректное отображение формы "Оставьте заявку на консультацию" при переходе через блок "Контакты"')
-def test_main_page_element_blog(setup_browser):
+def test_correct_display_consultation_form_via_contacts(setup_browser):
     with allure.step('Открыть главную страницу сайта'):
         main_page = MainPage()
         main_page.open()
