@@ -34,7 +34,10 @@ pytest tests --browser_version=${BROWSER_VERSION} --browser_name=${BROWSER_NAME}
 <img width="1000" src="sources/allure-dashboard.png">
 
 ### При выполнении автотестов, для тестов линкуются логи, скриншоты, html-страница и видео прохождения кейса
-<img width="1200" src="source/allure-test-case-result-artefacts.png">
+<img width="1000" src="sources/allure-result-artifacts.png">
+
+##### Пример видео:
+<img width="1000" src="source/video.gif">
 
           
                                                         
