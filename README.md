@@ -11,6 +11,6 @@
 Кейсы реализованы основе шаблона PageObject
 
 ## Используемый стек технологий и инструментов
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" height="40" width="40"/>
+<img src="data_sources/python.svg" height="55" width="55"/>
                                             |                     
 
