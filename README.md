@@ -37,7 +37,10 @@ pytest tests --browser_version=${BROWSER_VERSION} --browser_name=${BROWSER_NAME}
 <img width="1000" src="sources/allure-result-artifacts.png">
 
 ##### Пример видео:
-<img width="1000" src="source/allure-video.gif">
+<img width="1000" src="sources/allure-video.gif">
+
+### Добавлено уведомление о выполнении прохождении тест-кейсов через чат-бота в Telegrm
+<img src="source/telegram.png">
 
           
                                                         
