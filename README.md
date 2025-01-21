@@ -11,9 +11,9 @@
 Кейсы реализованы основе шаблона PageObject
 
 ## Используемый стек технологий и инструментов
-|                          Python                                |                          Pytest                                |                              Selene                              |                          Selenoid                       |                       Allure                          |                      Allure TestOps                   |                         Git                                |                           Jenkins                              |                        Telegram                        |
-|:--------------------------------------------------------------:|:--------------------------------------------------------------:|:----------------------------------------------------------------:|:-------------------------------------------------------:|:-----------------------------------------------------:|:-----------------------------------------------------:|:----------------------------------------------------------:|:--------------------------------------------------------------:|:------------------------------------------------------:|
-|<img src="sources/python-original.svg" height="45" width="45" />|<img src="sources/pytest-original.svg" height="55" width="55" />|<img src="sources/selenium-original.svg" height="40" width="40" />|<img src="sources/selenoid.svg" height="50" width="50" />|<img src="sources/allure.svg" height="40" width="40" />|<img src="sources/TestOps.svg" height="45" width="45"/>|<img src="sources/git-original.svg" height="40" width="40"/>|<img src="sources/jenkins-original.svg" height="45" width="45"/>|<img src="sources/telegram.svg" height="35" width="35"/>|          
+|                          Python                                |                          Pytest                                |                              Selene                              |                          Selenoid                       |                       Allure                          |                            Git                             |                           Jenkins                              |                        Telegram                        |
+|:--------------------------------------------------------------:|:--------------------------------------------------------------:|:----------------------------------------------------------------:|:-------------------------------------------------------:|:-----------------------------------------------------:|:----------------------------------------------------------:|:--------------------------------------------------------------:|:------------------------------------------------------:|
+|<img src="sources/python-original.svg" height="45" width="45" />|<img src="sources/pytest-original.svg" height="55" width="55" />|<img src="sources/selenium-original.svg" height="40" width="40" />|<img src="sources/selenoid.svg" height="50" width="50" />|<img src="sources/allure.svg" height="40" width="40" />|<img src="sources/git-original.svg" height="40" width="40"/>|<img src="sources/jenkins-original.svg" height="45" width="45"/>|<img src="sources/telegram.svg" height="35" width="35"/>|          
 
 ## Запуск автотестов
 ### На Jenkins реализован параметризованный запуск тестов:
@@ -23,7 +23,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 pytest tests --browser_version=${BROWSER_VERSION} --browser_name=${BROWSER_NAME}
 ```
-<img width="1200" src="sources/jenkins-biuid.png" />
+<img width="1200" src="sources/jenkins_build.png" />
+
+### Тесты выполняются на удаленном браузере благодаря использованию Selenoid
+Логин и пароль для доступа к Selenoid хранятся в переменных среды
+### Добавлена генерация отчетов на Allure
+<img width="1200" src="source/jenkins-artefact.png">
 
           
                                                         
