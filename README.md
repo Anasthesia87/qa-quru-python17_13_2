@@ -13,6 +13,6 @@
 ## Используемый стек технологий и инструментов
 |                           Python                           |
 |:---------------------------------------------------------: |
-|<img width="55" height="55" src="data_sources/python.svg"/> |
+|<src="data_sources/python.svg"/>                            |
 
 
