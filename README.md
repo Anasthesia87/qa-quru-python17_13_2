@@ -23,24 +23,24 @@ source .venv/bin/activate
 pip install -r requirements.txt
 pytest tests --browser_version=${BROWSER_VERSION} --browser_name=${BROWSER_NAME}
 ```
-<img width="800" src="sources/jenkins_build.png" />
+<img width="1200" src="sources/jenkins_build.png" />
 
-### Тесты выполняются на удаленном браузере благодаря использованию Selenoid
+### Тесты выполняются на удаленном браузере благодаря использованию Selenoid:
 Логин и пароль для доступа к Selenoid хранятся в переменных среды
-### Добавлена генерация отчетов на Allure
-<img width="600" src="sources/jenkins-artifacts.png">
+### Добавлена генерация отчетов на Allure:
+<img width="1200" src="sources/jenkins-artifacts.png">
 
 #### Дашборд:
-<img width="1000" src="sources/allure-dashboard.png">
+<img width="1200" src="sources/allure-dashboard.png">
 
-### При выполнении автотестов, для тестов линкуются логи, скриншоты, html-страница и видео прохождения кейса
-<img width="1000" src="sources/allure-result-artifacts.png">
+### При выполнении автотестов, для тестов линкуются логи, скриншоты, html-страница и видео прохождения кейса:
+<img width="1200" src="sources/allure-result-artifacts.png">
 
 ##### Пример видео:
-<img width="1000" src="sources/allure-video.gif">
+<img width="1200" src="sources/allure-video.gif">
 
-### Добавлено уведомление о выполнении прохождении тест-кейсов через чат-бота в Telegrm
-<img src="source/telegram.png">
+### Добавлено уведомление о выполнении прохождении тест-кейсов через чат-бота в Telegram:
+<img src="sources/notif-tg.png">
 
           
                                                         
