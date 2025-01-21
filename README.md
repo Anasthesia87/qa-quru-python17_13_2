@@ -11,9 +11,9 @@
 Кейсы реализованы основе шаблона PageObject
 
 ## Используемый стек технологий и инструментов
-|             Python
-|:----------------------------------------------------------------:|
-|                                                                  |<img src="sources/pytest-original.svg" height="55" width="55" />
+|                          Python                                |                          Pytest                                |                              Selene                              |                          Selenoid                       |                       Allure                          |                        Allure TestOps                          |
+|:--------------------------------------------------------------:|:--------------------------------------------------------------:|:----------------------------------------------------------------:|:-------------------------------------------------------:|:-----------------------------------------------------:|:--------------------------------------------------------------:|
+|<img src="sources/python-original.svg" height="45" width="45" />|<img src="sources/pytest-original.svg" height="55" width="55" />|<img src="sources/selenium-original.svg" height="40" width="40" />|<img src="sources/selenoid.svg" height="50" width="50" />|<img src="sources/allure.svg" height="40" width="40" />|<img src="sources/Allure_TestOps.svg" height="40" width="40" /> |                                                                
           
                                                         
 
