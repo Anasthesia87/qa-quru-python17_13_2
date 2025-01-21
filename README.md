@@ -11,7 +11,8 @@
 Кейсы реализованы основе шаблона PageObject
 
 ## Используемый стек технологий и инструментов
-| Allure TestOps | Allure TestOps | Allure TestOps | Allure TestOps | Allure TestOps | Allure TestOps | Allure TestOps | Allure TestOps | Allure TestOps |    
-|:-----------------------------------------------------:|
+|                           Python                          |
+|:---------------------------------------------------------:|
+|<img width="55" height="55" src="data_source/python.svg"/> |
 
 
