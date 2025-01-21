@@ -11,7 +11,9 @@
 Кейсы реализованы основе шаблона PageObject
 
 ## Используемый стек технологий и инструментов
-<img src="data_sources/pytest-original.svg" height="55" width="55" />
+|             Python
+|:----------------------------------------------------------------:|
+|                                                                  |<img src="sources/pytest-original.svg" height="55" width="55" />
           
                                                         
 
