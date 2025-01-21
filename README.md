@@ -23,12 +23,15 @@ source .venv/bin/activate
 pip install -r requirements.txt
 pytest tests --browser_version=${BROWSER_VERSION} --browser_name=${BROWSER_NAME}
 ```
-<img width="1200" src="sources/jenkins_build.png" />
+<img width="800" src="sources/jenkins_build.png" />
 
 ### Тесты выполняются на удаленном браузере благодаря использованию Selenoid
 Логин и пароль для доступа к Selenoid хранятся в переменных среды
 ### Добавлена генерация отчетов на Allure
-<img width="1200" src="source/jenkins-artefact.png">
+<img width="600" src="sources/jenkins-artifacts.png">
+
+#### Дашборд:
+<img width="1000" src="source/allure-dashboard.png">
 
           
                                                         
