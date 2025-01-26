@@ -1,3 +1,0 @@
-{'level': 'SEVERE', 'message': 'https://static.popmechanic.ru/service/loader.js?c=3683 - Failed to load resource: net::ERR_EMPTY_RESPONSE', 'source': 'network', 'timestamp': 1737411323175}
-{'level': 'WARNING', 'message': 'https://privacy-cs.mail.ru/static/sync-loader.js 4 Failed to create WebGPU Context Provider', 'source': 'rendering', 'timestamp': 1737411323863}
-{'level': 'WARNING', 'message': 'https://privacy-cs.mail.ru/static/sync-loader.js 4 Failed to parse video contentType: video/ogg; codecs=theora', 'source': 'other', 'timestamp': 1737411327980}
